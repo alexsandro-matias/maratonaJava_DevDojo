@@ -12,7 +12,7 @@ public class FuncionarioTest
 		funcionario.setCpf("111.222.333-44");
 		funcionario.setSalario(4500);
 		funcionario.imprime();
-//		
+		//
 		Funcionario xuxa = new Funcionario("Alexsandro");
 		xuxa.init("Xuxa Meneguel", "456465465", 15000, "78789787");
 		xuxa.imprime();

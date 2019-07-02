@@ -5,29 +5,16 @@ package br.com.abc.javacore.sobrecargametodos.classes;
 
 public class Funcionario
 {
-	private String nome;
 	private String cpf;
-	private double salario;
+	private String nome;
 	private String rg; // adicionado depois
+	private double salario;
 
-	// criado o método somente para imprimir
-	public void imprime()
+	//
+	// Criando um construtor vazio -> sobrecarga de construtores
+	public Funcionario()
 	{
-		System.out.println(this.getNome());
-		System.out.println(this.getCpf());
-		System.out.println(this.getSalario());
-		System.out.println(this.getRg());
-		System.out.println("------------------");
 	}
-	//
-	// Onde está o construtor? Por que quando compila o programa e a JVM não
-	// acha nenhum construtor, ele insere o construtor automático.
-	//
-	// Construtores são rotinas de inicialização com a seguinte regras:
-	// 1. Eles nunca terão retorno;
-	// 2. modificador de acesso + nome da mesma classe.
-	// É a primeira parte do código quando ele construído.
-	//
 
 	//
 	// Para criarmos uma regram que todo o funcionário terá um nome
@@ -47,11 +34,57 @@ public class Funcionario
 		this.rg = rg;
 	}
 
-	//
-	// Criando um construtor vazio -> sobrecarga de construtores
-	public Funcionario()
+	public String getCpf()
 	{
+		return cpf;
 	}
+
+	// No momento da sobrecarga, a escolha do método ocorre em tempo compilação,
+	// baseada na lista de parâmetros.
+	//
+	// Ainda há muita repetição de código entre as linhas 32 e 47. Podemos fazer
+	// um método mais incompleto sendo parte de um mais completo.
+	// public void init(String nome, String cpf, double salario, String rg)
+	// {
+	// init(nome, cpf, salario);
+	// this.rg = rg;
+	// }
+	//
+	//
+	public String getNome()
+	{
+		return nome;
+	}
+
+	// Método criado depois
+	public String getRg()
+	{
+		return rg;
+	}
+
+	public double getSalario()
+	{
+		return salario;
+	}
+
+	// criado o método somente para imprimir
+	public void imprime()
+	{
+		System.out.println(this.getNome());
+		System.out.println(this.getCpf());
+		System.out.println(this.getSalario());
+		System.out.println(this.getRg());
+		System.out.println("------------------");
+	}
+	//
+	// Onde está o construtor? Por que quando compila o programa e a JVM não
+	// acha nenhum construtor, ele insere o construtor automático.
+	//
+	// Construtores são rotinas de inicialização com a seguinte regras:
+	// 1. Eles nunca terão retorno;
+	// 2. modificador de acesso + nome da mesma classe.
+	// É a primeira parte do código quando ele construído.
+	//
 
 	//
 	// A variável de referência Funcionario que está fazendo referência para um
@@ -90,21 +123,9 @@ public class Funcionario
 		this.rg = rg;
 	}
 
-	// No momento da sobrecarga, a escolha do método ocorre em tempo compilação,
-	// baseada na lista de parâmetros.
-	//
-	// Ainda há muita repetição de código entre as linhas 32 e 47. Podemos fazer
-	// um método mais incompleto sendo parte de um mais completo.
-	// public void init(String nome, String cpf, double salario, String rg)
-	// {
-	// init(nome, cpf, salario);
-	// this.rg = rg;
-	// }
-	//
-	//
-	public String getNome()
+	public void setCpf(String cpf)
 	{
-		return nome;
+		this.cpf = cpf;
 	}
 
 	public void setNome(String nome)
@@ -112,34 +133,13 @@ public class Funcionario
 		this.nome = nome;
 	}
 
-	public String getCpf()
+	public void setRg(String rg)
 	{
-		return cpf;
-	}
-
-	public void setCpf(String cpf)
-	{
-		this.cpf = cpf;
-	}
-
-	public double getSalario()
-	{
-		return salario;
+		this.rg = rg;
 	}
 
 	public void setSalario(double salario)
 	{
 		this.salario = salario;
-	}
-
-	// Método criado depois
-	public String getRg()
-	{
-		return rg;
-	}
-
-	public void setRg(String rg)
-	{
-		this.rg = rg;
 	}
 }

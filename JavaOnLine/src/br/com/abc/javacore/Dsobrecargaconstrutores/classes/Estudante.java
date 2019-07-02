@@ -1,12 +1,16 @@
 //Aula 40 - Construtores e sobrecarga de construtores parte 02
-package br.com.abc.javacore.sobrecargaconstrutores.classes;
+package br.com.abc.javacore.Dsobrecargaconstrutores.classes;
 
 public class Estudante
 {
+	private String dataMatricula;
 	private String matricula;
 	private String nome;
 	private double[] notas;
-	private String dataMatricula;
+
+	public Estudante()
+	{
+	}
 
 	// construtores não possuem retorno
 	public Estudante(String matricula, String nome, double[] notas)
@@ -31,6 +35,21 @@ public class Estudante
 		this.dataMatricula = dataMatricula;
 	}
 
+	public String getMatricula()
+	{
+		return matricula;
+	}
+
+	public String getNome()
+	{
+		return nome;
+	}
+
+	public double[] getNotas()
+	{
+		return notas;
+	}
+
 	public void imprime()
 	{
 		System.out.println(this.getNome());
@@ -42,33 +61,14 @@ public class Estudante
 		System.out.println(dataMatricula);
 	}
 
-	public Estudante()
-	{
-	}
-
-	public String getMatricula()
-	{
-		return matricula;
-	}
-
 	public void setMatricula(String matricula)
 	{
 		this.matricula = matricula;
 	}
 
-	public String getNome()
-	{
-		return nome;
-	}
-
 	public void setNome(String nome)
 	{
 		this.nome = nome;
-	}
-
-	public double[] getNotas()
-	{
-		return notas;
 	}
 
 	public void setNotas(double[] notas)
