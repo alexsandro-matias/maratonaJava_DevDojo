@@ -44,7 +44,6 @@ public class Estudante
 
 	public Estudante()
 	{
-		super();
 	}
 
 	public String getMatricula()
