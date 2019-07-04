@@ -46,6 +46,13 @@ public class Celular
 		this.imei = imei;
 	}
 
+	public Celular()
+	{
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
 	public String getNome()
 	{
 		return nome;
@@ -64,5 +71,10 @@ public class Celular
 	public void setImei(String imei)
 	{
 		this.imei = imei;
+	}
+
+	@Override public String toString()
+	{
+		return "Celular [nome=" + nome + ", imei=" + imei + "]";
 	}
 }
