@@ -1,4 +1,4 @@
-package br.com.abc;
+package br.com.abc.introducao;
 
 public class ImprimindoVariaveis
 {
