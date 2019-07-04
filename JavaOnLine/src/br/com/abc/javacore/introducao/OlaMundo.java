@@ -1,4 +1,4 @@
-package br.com.abc.introducao;
+package br.com.abc.javacore.introducao;
 
 //Aula 04 - Download do Ambiente de Desenvolvimento
 public class OlaMundo

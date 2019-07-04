@@ -1,4 +1,4 @@
-package br.com.abc.introducao;
+package br.com.abc.javacore.introducao;
 
 //Aula 01 - Como Java funciona 
 public class Aula01
