@@ -1,10 +1,20 @@
 // Aula 121 - Coleções parte 06 - Ordenação de Listas usando Comparable
+// Aula 122 - Coleções parte 07 - Ordenação de Listas usando Comparator
 package br.com.abc.javacore.colecoes.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
+class ProdutoNomeComparator implements Comparator<Produto>
+{
+	// Como é uma classe externa, ela precisa receber dois parâmetros.
+	@Override public int compare(Produto arg0, Produto arg1)
+	{
+		return 0;
+	}
+}
 public class SortProdutoTest
 {
 	public static void main(String[] args)
@@ -22,7 +32,8 @@ public class SortProdutoTest
 		// Collections.sort(produtos);
 		// erro de compilação -> Ele não tem como saber qual dos itens deve
 		// ordenar -> se por String ou por número
-		// existe uma Interface chamada Comparable que utiliza um algoritmo de
+		// existe uma Interface chamada Comparable que utiliza um algoritmo
+		// de
 		// ordenação;
 		// Devemos implementar a Interface Comparable na classe Produto
 		//
