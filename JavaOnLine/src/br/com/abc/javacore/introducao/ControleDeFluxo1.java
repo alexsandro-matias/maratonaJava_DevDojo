@@ -8,17 +8,25 @@ public class ControleDeFluxo1
 		// idade < 15 - infatil
 		// idade >= 15 && idade < 18 - juveil
 		// idade > 18 - adulto
-		int idade = 15;
+		//
+		int idade = 18;
 		float salario = 2000;
 		boolean testeLogico = false;
-		if (idade > 18) // nos parantesis sempre um valor lógico(booleano) deve
-						// ser comparado.
+		// nos parantesis sempre um valor lógico(booleano) deve ser comparado.
+		//
+		if (idade < 15)
 		{
-			System.out.println("Ele entrou no clube.");
+			System.out.println("Categoria Infatil.");
 		}
-		else // senao
+		else if (idade >= 15 && idade < 18)
 		{
-			System.out.println("Não pode entrar no clube");
+			System.out.println("Categoria Juvenil");
+		}
+		//
+		// Ou else if(idade > 18)
+		else
+		{
+			System.out.println("Categoria Adulto");
 		}
 		if (testeLogico = true) // nesse caso será uma atribuição, e não uma
 								// comparação.
@@ -27,8 +35,6 @@ public class ControleDeFluxo1
 		}
 		// caso haja apenas uma instrução, não são necessárias chaves. Porém é
 		// uma boa prática deixá-las para manuntenção do código.
-		else
-		{
-		}
+		
 	}
 }
