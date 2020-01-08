@@ -1,7 +1,7 @@
 package br.com.abc.javacore.parte01_introducao;
 
-//Aula 10 -	Estruturas condicionais if e else
-public class Aula010_2
+//Aula 11 -	Estruturas condicionais if/else - operador ternário
+public class Aula011
 {
 	public static void main(String[] args)
 	{
@@ -9,7 +9,7 @@ public class Aula010_2
 		// idade >= 15 && idade < 18 - juveil
 		// idade > 18 - adulto
 		//
-		int idade = 18;
+		int idade = 15;
 		float salario = 2000;
 		boolean testeLogico = false;
 		// nos parantesis sempre um valor lógico(booleano) deve ser comparado.
@@ -35,5 +35,22 @@ public class Aula010_2
 		}
 		// caso haja apenas uma instrução, não são necessárias chaves. Porém é
 		// uma boa prática deixá-las para manuntenção do código.
+		//
+		// Operador ternário
+		// Saber se uma pessoa é adulta ou não
+		String status;
+		if (idade < 18)
+		{
+			status = "menor de idade";
+		}
+		else
+		{
+			status = "adulto";
+		}
+		// status = condicao-if ? <true> : <false>;
+		// como status é do tipo String, o true or false deve ser também um
+		// String.
+		status = idade < 18 ? "menor de idade" : "adulto";
+		System.out.println(status);
 	}
 }

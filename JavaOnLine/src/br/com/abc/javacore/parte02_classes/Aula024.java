@@ -1,6 +1,6 @@
-package br.com.abc.javacore.introducaoclasses;
+package br.com.abc.javacore.parte02_classes;
 
-public class IntroducaoClassesTest
+public class Aula024
 {
 	public static void main(String[] args)
 	{
