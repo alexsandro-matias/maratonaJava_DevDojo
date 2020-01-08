@@ -1,7 +1,7 @@
-package br.com.abc.javacore.introducao;
+package br.com.abc.javacore.parte01_introducao;
 
 //Aula 10 -	Estruturas condicionais if e else
-public class ControleDeFluxo1
+public class Aula010_2
 {
 	public static void main(String[] args)
 	{
@@ -35,6 +35,5 @@ public class ControleDeFluxo1
 		}
 		// caso haja apenas uma instrução, não são necessárias chaves. Porém é
 		// uma boa prática deixá-las para manuntenção do código.
-		
 	}
 }

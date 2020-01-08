@@ -1,4 +1,4 @@
-package br.com.abc.javacore.introducao;
+package br.com.abc.javacore.parte01_introducao;
 
 /***
  * prerequisistos - lógica de programação + Banco de Dados
@@ -41,4 +41,9 @@ package br.com.abc.javacore.introducao;
  * 
  */
 public class Aula000
-{}
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Aula zero!!!!!");
+	}
+}

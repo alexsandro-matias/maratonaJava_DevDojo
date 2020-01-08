@@ -1,4 +1,4 @@
-package br.com.abc.javacore.introducao;
+package br.com.abc.javacore.parte01_introducao;
 
 /***
  *
@@ -6,7 +6,7 @@ package br.com.abc.javacore.introducao;
  *
  *
  */
-public class Aula010
+public class Aula010_1
 {
 	int idade;
 

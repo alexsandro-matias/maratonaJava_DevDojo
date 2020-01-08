@@ -1,7 +1,7 @@
-package br.com.abc.javacore.introducao;
+package br.com.abc.javacore.parte01_introducao;
 
 //Aula 04 - Download do Ambiente de Desenvolvimento
-public class OlaMundo
+public class Aula004
 {
 	public static void main(String[] args)
 	{

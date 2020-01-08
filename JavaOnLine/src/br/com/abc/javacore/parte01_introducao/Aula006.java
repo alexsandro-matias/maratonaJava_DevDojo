@@ -1,4 +1,4 @@
-package br.com.abc.javacore.introducao;
+package br.com.abc.javacore.parte01_introducao;
 
 public class Aula006
 {

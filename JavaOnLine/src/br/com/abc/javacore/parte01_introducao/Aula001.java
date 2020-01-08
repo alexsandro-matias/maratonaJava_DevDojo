@@ -1,7 +1,7 @@
-package br.com.abc.javacore.introducao;
+package br.com.abc.javacore.parte01_introducao;
 
 //Aula 01 - Como Java funciona 
-public class Aula01
+public class Aula001
 {
 	// O problema em programar para cada sistema operacional era por que o
 	// processo de compilação é feito para tal hardware específico.
