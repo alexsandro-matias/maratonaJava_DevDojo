@@ -1,4 +1,4 @@
-package br.com.abc.javacore.parte02_classes;
+package br.com.abc.javacore.parte02_introducaoclasses.classes;
 
 //forma de organização de diretórios para melhor encontrar nossas 
 //classes e representa a primeira linha de uma classe, senão dará um erro compilação
