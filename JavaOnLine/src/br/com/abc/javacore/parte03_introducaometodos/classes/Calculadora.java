@@ -4,6 +4,7 @@ package br.com.abc.javacore.parte03_introducaometodos.classes;
 //Aula 28 - métodos com parâmetros
 //Aula 29 - retorno nos métodos
 //Aula 30 - retono de métodos
+//Aula 31 - Métodos com parâmetros tipo reference
 public class Calculadora
 {
 	// [visibilidade ou acesso do método] --- [tipo de retorno] -- [nome do
@@ -40,10 +41,35 @@ public class Calculadora
 
 	public double divideDoisNumeros(double num1, double num2)
 	{
-		// double resultado = num1/num2;
-		// return resultado;
-		return (num1 / num2); // forma mais objetiva.
-		// O tipo de retorno deve ser compatível com o tipo declarado na
-		// assinatura do método.
+		// Para divisão por 0 devemos tratar esse erro:
+		if (num2 != 0)
+		{
+			// double resultado = num1/num2;
+			// return resultado
+			// E após essa instrução, nada poderá executado, o que pode causar
+			// um erro de compilação.
+			// O tipo de retorno deve ser compatível com o tipo declarado na
+			// assinatura do método.
+			//
+			// Como não é possível usar o break em estruturas condicionais, pode
+			// ser usado apenas o return 0;
+			//
+			// System.out.println(num1 / num2);
+			// return;
+			return (num1 / num2); // forma mais objetiva.
+		}
+		else
+		{
+			return 0;
+		}
+	}
+	
+	public void mudaDoisNumeros(int num1, int num2)
+	{
+		num1 = 30;
+		num2 = 40;
+		System.out.println("num1: "+num1);	
+		System.out.println("num2: "+num2);	
+		System.out.println("Dentro do muda dois números");
 	}
 }

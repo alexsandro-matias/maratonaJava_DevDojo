@@ -13,7 +13,15 @@ public class CalculadoraTest
 		calculadora.subtraiDoisNumeros();
 		calculadora.multiplicaDoisNumeros(5d, 6);
 		// variável de referência -> método -> os valores 5 e 6 como argumentos.
-		System.out.println(calculadora.divideDoisNumeros(20, 2));
+		System.out.println(calculadora.divideDoisNumeros(20, 2)); // se fosse
+																	// void,
+																	// daria um
+																	// erro de
+																	// compilação,
+																	// já que
+																	// esperado
+																	// um
+																	// retorno.
 		double quociente = calculadora.divideDoisNumeros(20, 2);
 		System.out.println(quociente);
 		System.out.println("Continuando a execução");
