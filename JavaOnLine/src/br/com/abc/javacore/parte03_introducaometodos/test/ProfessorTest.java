@@ -25,13 +25,26 @@ public class ProfessorTest
 		//
 		// Para evitar repetição de código, iremos imprimir no método do
 		// professor
-		professor1.imprimeProfessor(professor1);
-		professor1.imprimeProfessor(professor2);
+//		professor1.imprimeProfessor(professor1);
+//		professor1.imprimeProfessor(professor2);
 		// professor1 é um objeto do tipo Professor com as características
 		// descritas.
 		// professor2 faz referência a outra objeto (Joana) e que podem chamar
 		// atributos(características) e métodos(comportamentos) já são derivados
 		// da mesma classe. Então professor1 e professor2 são variáveis de
 		// referência.
+		//
+		// Outra forma de fazer sem erros seria:
+//		professor1.imprimeProfessor(professor1);
+//		professor2.imprimeProfessor(professor2);
+		// quem executa os métodos são os objetos e não os métodos. Por isso não
+		// tem diferença, já que executa é o objeto do tipo professor.
+		
+		// System.out.println("Dentro de professor test");
+		// System.out.println(professor1.nome);
+		// professor1.imprimeProfessor(professor1);
+		// System.out.println(professor1.nome);
+		professor1.imprimeProfessor();
+		professor2.imprimeProfessor();
 	}
 }
