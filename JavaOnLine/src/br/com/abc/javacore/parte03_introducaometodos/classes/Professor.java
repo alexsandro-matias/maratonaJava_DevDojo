@@ -7,12 +7,12 @@ public class Professor
 	public String rg;
 	public String cpf;
 
-	public void imprimeProfessor()
+	public void imprimeProfessor(Professor aux)
 	{
-		System.out.println(nome);
-		System.out.println(cpf);
-		System.out.println(rg);
-		System.out.println(matricula);
+		System.out.println(aux.nome);
+		System.out.println(aux.cpf);
+		System.out.println(aux.rg);
+		System.out.println(aux.matricula);
 		System.out.println("-----------------------------");
 	}
 }
