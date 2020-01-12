@@ -5,6 +5,9 @@ package br.com.abc.javacore.parte03_introducaometodos.classes;
 //Aula 29 - retorno nos métodos
 //Aula 30 - retono de métodos
 //Aula 31 - Métodos com parâmetros tipo reference
+//Aula 33 - Métodos com parâmetros tipo varargs
+//Aula 34 - UML - agile modeling artifacts
+//Aula 35 -  Exercício sobre métodos
 public class Calculadora
 {
 	// [visibilidade ou acesso do método] --- [tipo de retorno] -- [nome do
@@ -63,13 +66,46 @@ public class Calculadora
 			return 0;
 		}
 	}
-	
+
 	public void mudaDoisNumeros(int num1, int num2)
 	{
 		num1 = 30;
 		num2 = 40;
-		System.out.println("num1: "+num1);	
-		System.out.println("num2: "+num2);	
+		System.out.println("num1: " + num1);
+		System.out.println("num2: " + num2);
 		System.out.println("Dentro do muda dois números");
 	}
+
+	// uma forma de passagem de vários parâmetros para um método
+	public void somaArray(int[] numeros) //
+	{
+		int soma = 0;
+		for (int num : numeros)
+		{
+			soma += num;
+		}
+		System.out.println(soma);
+	}
+	// Mas se não soubermos a quantidade de valores. A partir do Java 5, foi
+	// criada uma nova forma de passagem de parâmetros chamados VARARGS
+
+	public void somaVarargs(int... numeros) // o código é o mesmo, por que o
+											// Java ele transforma o valores
+											// passados como parâmetro e os
+											// transformam num array. Porém a
+											// chamado do método muda.
+	{
+		int soma = 0;
+		for (int num : numeros)
+		{
+			soma += num;
+		}
+		System.out.println(soma);
+	}
+	// Porém tem há regras:
+	// somente um varargs por assinatura de método.
+	// Caso seja mais de parâmetro, o varargs deve ser o último. Por que não
+	// teria como saber qual o último parâmetro.
+	// public void somaVarargs(double valor, int... numeros)
+	// ... depois do tipo
 }
