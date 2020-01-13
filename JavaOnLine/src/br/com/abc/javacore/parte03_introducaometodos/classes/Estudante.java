@@ -1,5 +1,5 @@
 package br.com.abc.javacore.parte03_introducaometodos.classes;
-//Aula 35 - Exercício de Métodos.
+//Aula 35 - Exercício de Métodos
 
 public class Estudante
 {
