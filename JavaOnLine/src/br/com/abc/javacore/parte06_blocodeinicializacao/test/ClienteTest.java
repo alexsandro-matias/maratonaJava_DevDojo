@@ -1,7 +1,7 @@
 //Aula 41 - Blocos de inicializacao
-package br.com.abc.javacore.blocodeinicializacao.test;
+package br.com.abc.javacore.parte06_blocodeinicializacao.test;
 
-import br.com.abc.javacore.blocodeinicializacao.classes.Cliente;
+import br.com.abc.javacore.parte06_blocodeinicializacao.classes.Cliente;
 
 public class ClienteTest
 {

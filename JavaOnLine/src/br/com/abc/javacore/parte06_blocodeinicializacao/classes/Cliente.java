@@ -1,5 +1,5 @@
 //Aula 41 - Blocos de inicializacao
-package br.com.abc.javacore.blocodeinicializacao.classes;
+package br.com.abc.javacore.parte06_blocodeinicializacao.classes;
 
 //Fixando valores de quantidade de parcelas num dropdown
 public class Cliente
