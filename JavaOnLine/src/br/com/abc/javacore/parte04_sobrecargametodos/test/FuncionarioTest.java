@@ -16,5 +16,8 @@ public class FuncionarioTest
 		Funcionario funcionario2 = new Funcionario();
 		funcionario2.init("Paulo", "1324654645", 1500, "6208063");
 		funcionario2.imprimeFuncionario();
+		//
+		Funcionario funcionario3 = new Funcionario();
+		funcionario3.imprimeFuncionario();
 	}
 }

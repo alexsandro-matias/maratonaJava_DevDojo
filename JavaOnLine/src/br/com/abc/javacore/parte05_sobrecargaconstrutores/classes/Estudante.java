@@ -1,5 +1,5 @@
 //Aula 40 - Construtores e sobrecarga de construtores parte 02
-package br.com.abc.javacore.sobrecargaconstrutores.classes;
+package br.com.abc.javacore.parte05_sobrecargaconstrutores.classes;
 
 public class Estudante
 {
