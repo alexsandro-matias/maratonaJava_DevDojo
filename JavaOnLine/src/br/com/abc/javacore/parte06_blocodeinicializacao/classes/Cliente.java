@@ -4,7 +4,7 @@ package br.com.abc.javacore.parte06_blocodeinicializacao.classes;
 //Fixando valores de quantidade de parcelas num dropdown
 public class Cliente
 {
-	private int[] parcelas;
+//	private int[] parcelas;
 	// 1. primeira parte executada (Alocado espaço na memória para o objeto que
 	// será criado), uma vez que já está em memória. Antes do
 	// construtor.
@@ -12,14 +12,14 @@ public class Cliente
 	// padrão.
 	// 3. bloco de inicialização é executado. <- Aula de hoje
 	// 4. O construtor é executado;
-	// private int[] parcelas = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	 private int[] parcelas = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	//
 	//
 	// bloco de inicialização
 	{
 		System.out.println("Dentro do Bloco de Inicialização");
-		parcelas = new int[100];
-		for (int i = 0; i < 100; i++)
+		parcelas = new int[10];
+		for (int i = 0; i < 10; i++)
 		{
 			parcelas[i] = i + 1;
 		}

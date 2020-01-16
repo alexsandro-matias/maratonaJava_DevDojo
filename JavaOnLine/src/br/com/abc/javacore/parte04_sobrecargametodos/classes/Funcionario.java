@@ -1,4 +1,5 @@
 package br.com.abc.javacore.parte04_sobrecargametodos.classes;
+
 //Aula 38 - Sobrecarga de métodos
 //Aula 39 - Sobrecarga de métodos e construtores
 //Aula 40 - Sobrecarga de métodos e construtores
@@ -112,6 +113,20 @@ public class Funcionario
 	//
 	// Da mesma forma, é possível fazer a sobrecarga de construtores. Um exemplo
 	// seria criar um objeto vazio.
+	//
+	//
+	// No momento da sobrecarga, a escolha do método ocorre em tempo compilação,
+	// baseada na lista de parâmetros.
+	//
+	// Ainda há muita repetição de código entre as linhas 32 e 47. Podemos fazer
+	// um método mais incompleto sendo parte de um mais completo.
+	// public void init(String nome, String cpf, double salario, String rg)
+	// {
+	// init(nome, cpf, salario);
+	// this.rg = rg;
+	// }
+	//
+	//
 
 	public Funcionario()
 	{
@@ -120,3 +135,41 @@ public class Funcionario
 													// objeto for criado.
 	}
 }
+//
+// Onde está o construtor? Por que quando compila o programa e a JVM não
+// acha nenhum construtor, ele insere o construtor automático.
+//
+// Construtores são rotinas de inicialização com a seguinte regras:
+// 1. Eles nunca terão retorno;
+// 2. modificador de acesso + nome da mesma classe.
+// É a primeira parte do código quando ele construído.
+//
+//
+// A variável de referência Funcionario que está fazendo referência para um
+// objeto que tem os atributos acima.
+// Quando atribuimos os valores pelos métodos setters.
+// Como os métodos são privados quem virão os valores são os métodos.
+// No caso da palavra reservada this que age comom variável de referência
+// que referencia ao próprio objeto. Ele alcança tanto os atributos quanto
+// métodos, uma vez que ele está dentro do método. Assim ele enxerga tudo
+// que está no objeto.
+//
+// Mas se tivessemos muitos atributos, não seria viável termos um método
+// dessa forma. Para exemplo iremos criar um método que reune todos os
+// métodos getters.
+//
+// antes da sobrecarga
+// public void init(String nome, String cpf, double salario)
+// {
+// this.nome = nome;
+// this.cpf = cpf;
+// this.salario = salario;
+// }
+// Porém se quisermos adicionar mais um atributo RG.
+// não é uma boa ideia alterar um método.
+// Por isso utiliza a sobrecarga que consiste em usar a mesma assinatura de
+// método, porém com a lista de parâmetros é diferente. Seja na quantidade
+// ou nos tipos deles. O tipo de retorno e tipo acesso não importam na
+// sobrecarga.
+//
+// depois da sobrecarga

@@ -30,6 +30,8 @@ public class Estudante
 		// construtor. Passado na mesma ordem.
 		this(matricula, nome, notas);
 		this.dataMatricula = dataMatricula;
+		// Com essa construção já é possível apagar os outros métodos "init"
+
 	}
 
 	public Estudante()
