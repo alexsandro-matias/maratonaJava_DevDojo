@@ -1,5 +1,7 @@
 package br.com.abc.javacore.parte07_modificadorestatico.test;
+
 // Aula 42 - modificador de acesso static 
+// Aula 43 - Métodos estáticos 
 import br.com.abc.javacore.parte07_modificadorestatico.classes.Carro;
 
 public class CarroTest
@@ -18,7 +20,9 @@ public class CarroTest
 		// sendo atributo privado.
 		// Essa linha dará erro. Já que devemos acessar a classe e não o objeto.
 		// carro1.setVelocidadeLimite(220);
-		Carro.velocidadeLimite = 220;
+		Carro.velocidadeLimite = 200;
+		// Quando os métodos getters e setters foram alterados para estáticos, essa
+		// alteração não será mais possível de ser realizada.
 		carro1.imprimeCarro();
 		carro2.imprimeCarro();
 		carro3.imprimeCarro();

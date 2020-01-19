@@ -1,5 +1,7 @@
 //Aula 41 - Blocos de inicializacao
-package br.com.abc.javacore.parte06_blocodeinicializacao.classes;
+//Aula 43 - Blocos de inicializacao com Métodos estáticos 
+
+package br.com.abc.javacore.parte07_modificadorestatico.classes;
 
 //Fixando valores de quantidade de parcelas num dropdown
 public class Cliente
