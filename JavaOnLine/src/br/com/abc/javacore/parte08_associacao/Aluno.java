@@ -13,7 +13,8 @@ public class Aluno
 	private String nome;
 	private int idade;
 	
-	// Como um aluno irá estar apenas em um
+	// Como um aluno irá estar apenas em um seminário
+	private Seminario seminario;
 	public Aluno(String nome, int idade)
 	{
 		super();
@@ -39,5 +40,15 @@ public class Aluno
 	public void setNome(String nome)
 	{
 		this.nome = nome;
+	}
+
+	public Seminario getSeminario()
+	{
+		return seminario;
+	}
+
+	public void setSeminario(Seminario seminario)
+	{
+		this.seminario = seminario;
 	}
 }
