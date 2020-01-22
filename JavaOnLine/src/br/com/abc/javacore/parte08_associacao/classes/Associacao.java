@@ -1,6 +1,6 @@
 //Aula 45 - Associação
 //Aula 46 - Exercício de Associação
-package br.com.abc.javacore.parte08_associacao;
+package br.com.abc.javacore.parte08_associacao.classes;
 
 public class Associacao
 {

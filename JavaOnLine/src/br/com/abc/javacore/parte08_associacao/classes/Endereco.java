@@ -1,4 +1,4 @@
-package br.com.abc.javacore.parte08_associacao;
+package br.com.abc.javacore.parte08_associacao.classes;
 
 public class Endereco
 {
