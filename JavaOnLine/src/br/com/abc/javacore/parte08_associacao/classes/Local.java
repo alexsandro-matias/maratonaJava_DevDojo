@@ -12,6 +12,12 @@ public class Local
 		this.bairro = bairro;
 	}
 	
+	public void print ()
+	{
+		System.out.println("Rua: "+this.rua);
+		System.out.println("Bairro: "+this.bairro);
+	}
+	
 	public String getRua()
 	{
 		return rua;
