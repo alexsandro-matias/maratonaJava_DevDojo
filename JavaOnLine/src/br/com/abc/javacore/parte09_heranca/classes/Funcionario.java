@@ -8,16 +8,14 @@ public class Funcionario extends Pessoa // Funcionário é uma Pessoa
 	// ou seja, Funcionario é uma classe mais especializada, enquanto Pessoa é
 	// mais genérica.
 	private double salario;
-
+	
 	public double getSalario()
 	{
 		return salario;
 	}
-
+	
 	public void setSalario(double salario)
 	{
 		this.salario = salario;
 	}
-	
-	
 }
