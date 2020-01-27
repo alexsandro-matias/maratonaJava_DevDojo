@@ -25,6 +25,7 @@ public class HerancaTest
 		endereco2.setRua("Jatobá");
 		doria.setEndereco(endereco2);
 		doria.setSalario(1500);
+		// Quem executa os métodos sempre serão as variáveis de referência (objetos)
 		doria.print();
 	}
 }
