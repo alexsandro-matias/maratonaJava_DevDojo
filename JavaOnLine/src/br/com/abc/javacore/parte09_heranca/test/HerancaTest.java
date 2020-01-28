@@ -8,14 +8,14 @@ public class HerancaTest
 {
 	public static void main(String[] args)
 	{
-		Pessoa pessoa = new Pessoa();
-		Endereco endereco = new Endereco();
-		pessoa.setCpf("132165465465");
-		pessoa.setNome("Jão britto");
-		endereco.setBairro("COHAB");
-		endereco.setRua("Rua Severino de Barros");
-		pessoa.setEndereco(endereco);
-		pessoa.print();
+		// Pessoa pessoa = new Pessoa();
+		// Endereco endereco = new Endereco();
+		// pessoa.setCpf("132165465465");
+		// pessoa.setNome("Jão britto");
+		// endereco.setBairro("COHAB");
+		// endereco.setRua("Rua Severino de Barros");
+		// pessoa.setEndereco(endereco);
+		// pessoa.print();
 		//
 		Funcionario doria = new Funcionario();
 		Endereco endereco2 = new Endereco();
@@ -26,6 +26,6 @@ public class HerancaTest
 		doria.setEndereco(endereco2);
 		doria.setSalario(1500);
 		// Quem executa os métodos sempre serão as variáveis de referência (objetos)
-		doria.print();
+		// doria.print();
 	}
 }

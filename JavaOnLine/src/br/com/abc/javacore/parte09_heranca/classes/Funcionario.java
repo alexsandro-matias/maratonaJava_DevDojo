@@ -16,10 +16,39 @@ public class Funcionario extends Pessoa // Funcionário é uma Pessoa
 	public Funcionario(String nome)
 	{
 		super(nome);
+		System.out.println("Dentro do construtor de funcionário");
+	}
+	
+	// Bloco de inicialização
+	{
+		System.out.println("Dentro do bloco de inicialização de funcionário");
+	}
+	// Bloco de inicialização estático
+	static
+	{
+		System.out.println("Dentro do bloco de inicialização estático em funcionário");
 	}
 	// Regras para se usar super:
 	// 1. Não se pode usar o .
 	// 2. Deverá ser a primeira instrução do construtor. Assim ou super ou this.
+	//
+	//
+	// Ordem de criação (inicialização) quando instanciado Funcionario()
+	// Bloco de inicialização estático de pessoa
+	// Dentro do bloco de inicialização estático em funcionário
+	// Bloco de inicialização de pessoa
+	// Dentro de Construtor de pessoa
+	// Dentro do bloco de inicialização de funcionário
+	//
+	// 1. Espaço em memória é alocado para o objeto sendo construído;
+	// 2. Cada um dos atributos do objeto é criado e inicializado com os valores
+	// padrão;
+	// 3. O construtor da superclasse é chamado (super);
+	// 4. A inicialização dos atributos via declaração e o código do bloco de
+	// inicialização da superclasse são executados na ordem que aparecem;
+	// 5. O código do construtor da superclasse é chamado;
+	// 6. Passo 4 para a subclasse é executado;
+	// 7. O código do construtor da classe é executado.
 	
 	public Funcionario()
 	{

@@ -15,16 +15,30 @@ public class Pessoa
 	protected String nome;
 	protected String cpf;
 	protected Endereco endereco;
-	
 	//
 	// adicionando o construtor
+	//
+	// Bloco de inicialização
+	{
+		System.out.println("Bloco de inicialização de pessoa");
+	}
+	//
+	// Bloco de inicialização estático
+	static
+	{
+		System.out.println("Bloco de inicialização estático de pessoa");
+	}
+	
 	public Pessoa(String nome)
 	{
+		System.out.println("Dentro de Construtor de pessoa");
 		this.nome = nome;
 	}
 	// Esse construtor dessa forma dará um erro de compilação nas classes filhas, já
 	// que todo funcionário é uma pessoa. Então se o construtor em pessoa obriga a
 	// adicionar um nome, então em funcionário também o será.
+	//
+	
 	
 	public Pessoa(String nome, String cpf)
 	{
@@ -34,6 +48,7 @@ public class Pessoa
 	
 	public Pessoa()
 	{
+		System.out.println("Dentro de Construtor de pessoa");
 		// Construtor vazio
 	}
 	
