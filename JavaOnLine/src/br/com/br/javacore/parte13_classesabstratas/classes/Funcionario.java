@@ -3,7 +3,7 @@ package br.com.br.javacore.parte13_classesabstratas.classes;
 
 //public class Funcionario
 //declaração da classe como abstrata que não pode ser final, uma vez que ela pode ser apenas extendida.
-public abstract class Funcionario
+public abstract class Funcionario extends Pessoa
 {
 	// Ela nunca será instaciada. A decisão do uso é arquitetural. Podem conter
 	// métodos abstratos, onde estes não são instanciados.
@@ -16,7 +16,7 @@ public abstract class Funcionario
 	// private String clt;
 	// private double salario;
 	// Deixando os atributos protected para não precisar o setters.
-	protected String nome;
+	
 	protected String clt;
 	protected double salario;
 
