@@ -1,9 +1,9 @@
 // Aula 60 - Classes abstratas pt 01
 // Aula 61 - Classes abstratas pt 02
-package br.com.br.javacore.parte13_classesabstratas.test;
+package br.com.abc.javacore.parte13_classesabstratas.test;
 
-import br.com.br.javacore.parte13_classesabstratas.classes.Gerente;
-import br.com.br.javacore.parte13_classesabstratas.classes.Vendedor;
+import br.com.abc.javacore.parte13_classesabstratas.classes.Gerente;
+import br.com.abc.javacore.parte13_classesabstratas.classes.Vendedor;
 
 public class FuncionarioTest
 {

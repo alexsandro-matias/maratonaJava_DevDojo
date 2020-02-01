@@ -1,5 +1,5 @@
 // Aula 60 - Classes abstratas pt 01
-package br.com.br.javacore.parte13_classesabstratas.classes;
+package br.com.abc.javacore.parte13_classesabstratas.classes;
 
 //public class Funcionario
 //declaração da classe como abstrata que não pode ser final, uma vez que ela pode ser apenas extendida.

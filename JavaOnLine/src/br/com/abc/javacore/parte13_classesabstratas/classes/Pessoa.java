@@ -1,6 +1,6 @@
 // Aula 61 - Classes abstratas pt 02
 
-package br.com.br.javacore.parte13_classesabstratas.classes;
+package br.com.abc.javacore.parte13_classesabstratas.classes;
 
 public abstract class Pessoa
 {

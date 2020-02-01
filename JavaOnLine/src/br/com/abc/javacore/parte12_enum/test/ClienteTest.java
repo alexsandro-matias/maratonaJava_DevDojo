@@ -1,11 +1,11 @@
 // Aula 57 - Enumerações pt 01
 // Aula 58 - Enumerações pt 02
 // Aula 59 - Enumerações pt 03
-package br.com.br.javacore.parte12_enum.test;
+package br.com.abc.javacore.parte12_enum.test;
 
-import br.com.br.javacore.parte12_enum.classes.Cliente;
-import br.com.br.javacore.parte12_enum.classes.Cliente.TipoPagamento;
-import br.com.br.javacore.parte12_enum.classes.TipoCliente;
+import br.com.abc.javacore.parte12_enum.classes.Cliente;
+import br.com.abc.javacore.parte12_enum.classes.TipoCliente;
+import br.com.abc.javacore.parte12_enum.classes.Cliente.TipoPagamento;
 
 public class ClienteTest
 {

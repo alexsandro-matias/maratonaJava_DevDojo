@@ -1,6 +1,6 @@
 // Aula 60 - Classes abstratas pt 01
 // Aula 61 - Classes abstratas pt 02
-package br.com.br.javacore.parte13_classesabstratas.classes;
+package br.com.abc.javacore.parte13_classesabstratas.classes;
 
 public class Gerente extends Funcionario
 {
@@ -19,3 +19,5 @@ public class Gerente extends Funcionario
 		System.out.println("Imprime dentro de Gerente.");
 	}
 }
+
+
