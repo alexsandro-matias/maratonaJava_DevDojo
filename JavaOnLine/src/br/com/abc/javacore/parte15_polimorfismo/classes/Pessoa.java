@@ -6,7 +6,6 @@ public abstract class Pessoa
 {
 	protected String nome;
 
-	public abstract void imprime();
 	// Esse método deve ser implementado na primeira classe concreta da árvore
 	// de herança, Já que é um método abstrato. Ela não apresentará erro de
 	// compilação caso as outras classes abaixo na árvore forem abstratas.
