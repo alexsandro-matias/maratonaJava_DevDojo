@@ -11,7 +11,7 @@ public class Vendedor extends Funcionario
 		this.totalVendas = totalVendas;
 	}
 
-	public void calculaSalario()
+	public void calcularPagamento()
 	{
 		this.salario = this.salario + (totalVendas * 0.05);
 	}

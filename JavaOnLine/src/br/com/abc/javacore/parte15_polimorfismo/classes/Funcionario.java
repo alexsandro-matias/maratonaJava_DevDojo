@@ -1,4 +1,6 @@
 // Aula 64: Polimorfismo pt 01
+// Aula 66: Polimorfismo pt 03
+
 package br.com.abc.javacore.parte15_polimorfismo.classes;
 
 public abstract class Funcionario extends Pessoa
@@ -6,7 +8,7 @@ public abstract class Funcionario extends Pessoa
 	protected String nome;
 	protected double salario;
 	
-	public abstract void calculaSalario();
+	public abstract void calcularPagamento();
 
 	public Funcionario(String nome, double salario)
 	{
