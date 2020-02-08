@@ -2,7 +2,7 @@
 //Aula 70 - Exceptions - lançando Exceções 
 //Aula 71 - Exceptions - bloco finally pt 05
 //Aula 72 - Tratamento de multiplas exceções pt 06
-package br.com.abc.javacore.parte16_excecoes.checked.classes;
+package br.com.abc.javacore.parte16_excecoeschecked.test;
 
 import java.io.File;
 import java.io.IOException;
