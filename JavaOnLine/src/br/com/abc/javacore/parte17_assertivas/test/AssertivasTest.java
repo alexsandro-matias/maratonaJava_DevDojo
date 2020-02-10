@@ -12,8 +12,9 @@ public class AssertivasTest
 		calculaSalario(-2000);
 	}
 	
-	private static void calculaSalario(double salario) // esse método deve ser privado para que somente a equipe possa
-														// escolher tais valores.
+	private static void calculaSalario(double salario)
+	// esse método deve ser privado para que somente a equipe possa
+	// escolher tais valores.
 	{
 		assert (salario > 0) : "Valor de salário negativo" + salario;
 		// Não é mais necessário o if/else
