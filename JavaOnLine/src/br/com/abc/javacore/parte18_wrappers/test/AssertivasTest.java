@@ -1,5 +1,5 @@
 //Aula 77 - Assertivas
-package br.com.abc.javacore.parte17_assertivas.test;
+package br.com.abc.javacore.parte18_wrappers.test;
 
 public class AssertivasTest
 {
