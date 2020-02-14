@@ -1,5 +1,6 @@
 //Aula 80 -  String pt 01
 //Aula 81 -  String pt 02
+//Aula 82 -  Performance de String
 package br.com.abc.javacore.parte19_string.test;
 
 public class StringTest
@@ -43,5 +44,7 @@ public class StringTest
 		System.out.println(teste2.substring(0, 2));
 		// Tirando espaços vazios na String
 		System.out.println(teste3.trim());// Usado em banco de dados para buscas por erros digitados pelo usuário.
+		
+		
 	}
 }
