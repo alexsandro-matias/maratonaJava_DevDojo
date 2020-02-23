@@ -1,6 +1,5 @@
 //Aula 85 - Formatação de datas com DateFormat
-package br.com.abc.javacore.parte19_string.test;
-//
+package br.com.abc.javacore.parte20_datas.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;

@@ -1,6 +1,6 @@
 //Aula 84 - Datas com  Date e Calendar
 //Aula 85 - Formatação de datas com DateFormat
-package br.com.abc.javacore.parte19_string.test;
+package br.com.abc.javacore.parte20_datas.test;
 
 import java.util.Calendar;
 import java.util.Date;
