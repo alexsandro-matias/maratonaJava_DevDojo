@@ -75,9 +75,22 @@ public class ExpressoesRegularesTest
 		// String regex3 = "0[xX][0-9a-fA-F]";
 		// A expressão acima, é um início mas não definitiva.já que pega todo o
 		// padrão. Para isso, precisamos de codificadores. Eles procuram por um
-		// ou mais vez uma determinada ocorrência. Eles se dividem de quatro
-		// formas.
-		String regex3 = "0[xX][0-9a-fA-F]";
+		// ou mais vez uma determinada ocorrência de determinada expressão.
+		// Eles se dividem de quatro formas.:
+		// - ? - zero ou uma
+		// - * - zero ou mais
+		// - + - uma ou mais
+		// - {n,m} - de n até m
+		// - () - agrupar
+		// - | - colocar ou
+		// - $ - fim de linha
+		// Exemplo:
+		// o(v|c)o - procure algo que começa com o O e tenha V OU C seguidos de O
+		// maca(rr|c)ão = macarrão macação.
+		//
+		// Neste caso precisamos do agrupamento então a expressão consertada vira:
+		// String regex3 = "0[xX][0-9a-fA-F]"; - se tranforma
+		String regex3 = "0[xX]([0-9a-fA-F]+)";
 		String texto3 = "10456798 54657 0x15874 456 0xf 0xg 0xg";
 		Pattern pattern3 = Pattern.compile(regex3);
 		Matcher matcher3 = pattern3.matcher(texto3);
@@ -96,3 +109,4 @@ public class ExpressoesRegularesTest
 		}
 	}
 }
+
