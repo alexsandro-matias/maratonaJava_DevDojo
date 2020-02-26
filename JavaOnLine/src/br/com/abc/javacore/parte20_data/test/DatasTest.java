@@ -6,6 +6,5 @@ public class DatasTest
 {
 	public static void main(String[] args)
 	{
-		Calendar calendar = new Calendar();
 	}
 }
