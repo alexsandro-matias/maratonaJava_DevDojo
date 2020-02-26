@@ -6,6 +6,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry excluding="br/com/abc/javacore/colecoes/classes/" kind="src" path="src"/>
-	<classpathentry kind="src" path="src/br/com/abc/javacore/colecoes/classes"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

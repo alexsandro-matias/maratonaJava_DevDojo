@@ -1,4 +1,4 @@
-package br.com.abc.javacore.colecoes.classes;
+package br.com.abc.javacore.colecoes.test;
 
 public class Celular
 {
