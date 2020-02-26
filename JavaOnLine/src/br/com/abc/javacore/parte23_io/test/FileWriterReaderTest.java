@@ -21,7 +21,7 @@ public class FileWriterReaderTest
 		// Que é
 		// // um recurso do sistema operacional que não temos a certeza que tudo ocorreu
 		// da
-		// // forma correta, chamados de Steam que são vários Bytes. Para garantir que
+		//  forma correta, chamados de Steam que são vários Bytes. Para garantir que
 		// saia
 		// // tudo da Steam devemos dar o comando flush
 		// arquivoSalvo.flush();
