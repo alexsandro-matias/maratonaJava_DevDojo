@@ -69,6 +69,6 @@ public class FileWriterReaderTest
 			e.printStackTrace();
 		}
 		// Uma série de classes ou interfaces são chamandas quando se trabalha com
-		// arquivos.
+		// arquivos
 	}
 }
