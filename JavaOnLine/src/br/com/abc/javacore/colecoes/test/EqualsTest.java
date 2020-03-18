@@ -2,8 +2,6 @@
 //Aula 117 - Coleções parte 02
 package br.com.abc.javacore.colecoes.test;
 
-import br.com.abc.javacore.colecoes.classes.Celular;
-
 public class EqualsTest
 {
 	public static void main(String[] args)
@@ -30,14 +28,10 @@ public class EqualsTest
 		// método equals()
 		//
 		System.out.println(int1.equals(int2)); // Agora retorna true
-		
 		Celular c1 = new Celular("Iphone", "1234");
 		Celular c2 = new Celular("Samgung", "1234");
 		System.out.println(c1 == c2);
 		System.out.println(c1.equals(c2));
 		System.out.println(c2.equals(c1));
-		
-		
-		
 	}
 }

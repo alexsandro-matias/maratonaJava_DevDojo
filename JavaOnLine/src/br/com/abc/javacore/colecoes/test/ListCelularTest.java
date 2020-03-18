@@ -4,8 +4,6 @@ package br.com.abc.javacore.colecoes.test;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.abc.javacore.colecoes.classes.Celular;
-
 public class ListCelularTest
 {
 	public static void main(String[] args)
