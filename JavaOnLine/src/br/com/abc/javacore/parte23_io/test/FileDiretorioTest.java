@@ -19,7 +19,6 @@ public class FileDiretorioTest
 		//
 		// Para criar um arquivo dentro desse diretório, faremos da seguinte
 		// forma:
-		File arhquivo = new File("/home/matias/Desktop/MaratonaJava_DevDojo/JavaOnLine/src");
-		boolean
+		File arquivo = new File("/home/matias/Desktop/MaratonaJava_DevDojo/JavaOnLine/src");
 	}
 }
