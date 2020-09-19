@@ -7,7 +7,7 @@ public abstract class Funcionario extends Pessoa
 {
 	protected String nome;
 	protected double salario;
-	
+
 	public abstract void calcularPagamento();
 
 	public Funcionario(String nome, double salario)

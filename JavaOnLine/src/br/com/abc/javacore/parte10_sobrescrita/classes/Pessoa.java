@@ -31,7 +31,5 @@ public class Pessoa
 	@Override public String toString()
 	{
 		return "Nome: "+this.nome+ "\nidade: "+this.idade;
- 	}
-	
-	
+	}
 }

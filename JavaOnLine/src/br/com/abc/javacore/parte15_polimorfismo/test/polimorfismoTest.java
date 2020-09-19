@@ -40,7 +40,8 @@ public class polimorfismoTest
 		// Isso ocorre por que se tentou fazer um casting de uma classe que não está
 		// mesma hierarquia. Mesmo vendedor e gerente serem filhas de funcionário. Não
 		// existe nenhuma relação entre elas. Ou seja, não é possível que gerente faça
-		// referência à classe vendedor. Para resolver esse problema, usaremos um
+		// referência à classe vendedor. Para resolver esse problema, usaremos
+		// um
 		// operador chamando instanceof() que verifica o tipo do objeto
 		relatorio.relatorioPagamentoGenerico(vendedor);
 	}

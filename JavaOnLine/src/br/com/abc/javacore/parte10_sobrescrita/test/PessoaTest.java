@@ -12,9 +12,11 @@ public class PessoaTest
 		// Mesma saída nas linhas abaixo
 		System.out.println(pessoa);
 		System.out.println(pessoa.toString());
-		// Já que será impressa o endereço de memória em Hexadecimal da variável de
+		// Já que será impressa o endereço de memória em Hexadecimal da variável
+		// de
 		// referência.
-		// Para impressão devemos fazer a sobrescrita do método toString() do Object.
+		// Para impressão devemos fazer a sobrescrita do método toString() do
+		// Object.
 		// Então deve ser definido o método da mesma forma que na classe pai.
 	}
 }
