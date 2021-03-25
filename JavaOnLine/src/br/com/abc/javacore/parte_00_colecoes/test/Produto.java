@@ -1,6 +1,6 @@
 // Aula 121 - Coleções parte 06 - Ordenação de Listas usando Comparable
 
-package br.com.abc.javacore.colecoes.test;
+package br.com.abc.javacore.parte_00_colecoes.test;
 //
 // Irá apresentar um erro de compilação por que precisa de sobrescrever todos os métodos
 public class Produto implements Comparable<Produto> 

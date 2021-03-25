@@ -1,7 +1,6 @@
 // Aula 119  - Coleçõs parte 04
 // Aula 120 - Coleções parte 05
-
-package br.com.abc.javacore.colecoes.test;
+package br.com.abc.javacore.parte_00_colecoes.test;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -14,8 +13,8 @@ public class ListTest
 		// Conceito de List -> antigamente
 		// para o crescimento indefinido dos arrays, usamos os Arrayslist
 		// ArrayList nomes = new ArrayList();
-		//  Erro de compilação por que não é determinado o tipo
-		// 
+		// Erro de compilação por que não é determinado o tipo
+		//
 		//
 		// Por isso teríamos que passar um Object no processo.
 		// Por isso foi criado o Generics que definem o tipo da coleção.
@@ -90,9 +89,8 @@ public class ListTest
 		{
 			System.out.println(nomes2.get(i));
 		}
-		
-		//para limpar uma lista
+		// para limpar uma lista
 		nomes2.clear();
-		//mas a objeto ou a referência dele
+		// mas a objeto ou a referência dele
 	}
 }

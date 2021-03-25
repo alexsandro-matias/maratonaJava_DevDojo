@@ -1,5 +1,5 @@
 //Aula 121 - Coleções parte 06 - Ordenação de listas com Comparable
-package br.com.abc.javacore.colecoes.test;
+package br.com.abc.javacore.parte_00_colecoes.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -33,9 +33,5 @@ public class SortListTest
 		numeros.add(1.2);
 		Collections.sort(numeros);
 		System.out.println(numeros);
-		
-		
 	}
-	
-	
 }

@@ -1,8 +1,10 @@
 //Aula 120 - Coleções parte 05
-package br.com.abc.javacore.colecoes.test;
+package br.com.abc.javacore.parte_00_colecoes.test;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import br.com.abc.javacore.parte_00_colecoes.classes.Celular;
 
 public class ListCelularTest
 {

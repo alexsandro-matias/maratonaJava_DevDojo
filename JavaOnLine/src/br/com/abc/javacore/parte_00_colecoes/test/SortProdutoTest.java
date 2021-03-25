@@ -1,6 +1,6 @@
 // Aula 121 - Coleções parte 06 - Ordenação de Listas usando Comparable
 // Aula 122 - Coleções parte 07 - Ordenação de Listas usando Comparator
-package br.com.abc.javacore.colecoes.test;
+package br.com.abc.javacore.parte_00_colecoes.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
