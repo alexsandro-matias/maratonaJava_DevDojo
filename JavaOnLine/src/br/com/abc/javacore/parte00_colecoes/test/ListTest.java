@@ -1,6 +1,6 @@
 // Aula 119  - Coleçõs parte 04
 // Aula 120 - Coleções parte 05
-package br.com.abc.javacore.parte_00_colecoes.test;
+package br.com.abc.javacore.parte00_colecoes.test;
 
 import java.util.List;
 import java.util.ArrayList;

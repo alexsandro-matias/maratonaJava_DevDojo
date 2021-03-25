@@ -1,8 +1,8 @@
 //Aula 116: Coleções parte 01 método equals()
 //Aula 117 - Coleções parte 02
-package br.com.abc.javacore.parte_00_colecoes.test;
+package br.com.abc.javacore.parte00_colecoes.test;
 
-import br.com.abc.javacore.parte_00_colecoes.classes.Celular;
+import br.com.abc.javacore.parte00_colecoes.classes.Celular;
 
 public class EqualsTest
 {

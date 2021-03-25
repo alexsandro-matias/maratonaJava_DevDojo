@@ -1,10 +1,10 @@
 //Aula 120 - Coleções parte 05
-package br.com.abc.javacore.parte_00_colecoes.test;
+package br.com.abc.javacore.parte00_colecoes.test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.abc.javacore.parte_00_colecoes.classes.Celular;
+import br.com.abc.javacore.parte00_colecoes.classes.Celular;
 
 public class ListCelularTest
 {
@@ -29,5 +29,8 @@ public class ListCelularTest
 		System.out.println(celular1.equals(celular4));
 		// Para verificar se um objeto pertence na lista
 		System.out.println(celulareslist.contains(celular4));
+		
+		
+		
 	}
 }

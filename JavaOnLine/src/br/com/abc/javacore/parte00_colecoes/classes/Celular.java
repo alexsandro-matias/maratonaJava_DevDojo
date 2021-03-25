@@ -1,4 +1,7 @@
-package br.com.abc.javacore.parte_00_colecoes.classes;
+// Aula 117 - Coleções pt 02 Introdução a Hashcode
+// Aula 118 - Coleções pt 03 Introdução as coleções
+
+package br.com.abc.javacore.parte00_colecoes.classes;
 
 public class Celular
 {
@@ -14,6 +17,7 @@ public class Celular
 	// 3. transistividade -> para x,y,z diferentes de null, se x.equals(y) ==
 	// true <=> x.equals(z) == true <=> y.equals(z) == true
 	// 4. consistente = x.equals(y) deve retornar o mesmo valor
+	// se x.equals(y) == true <=> y.hashcode() == x.hashcode
 
 	//
 	// Devemos fazer a o sobrescrição de Object
@@ -43,10 +47,33 @@ public class Celular
 		// Forma simplificada
 		// return imei != null && imei.equals(outroCelular.getImei());
 	}
+	//
+	// A tabela hash vai organizar os dados para que se tenha um maior
+	// performance na inserção e busca destes dados se dando através da relação
+	// chave e valor. A regra para consistência do Hashcode:
+	// se x.equals(y) == true <=> y.hashcode() == x.hashcode - Já que o mesmo
+	// hash gerado não garante que foram oriundo da mesma chave.
+	// Da mesma forma que:
+	// y.hashcode() != x.hashcode <=> x.equals(y) deverá ser false
+	//
+	// // Método automático do Eclipse
+	// @Override public int hashCode()
+	// {
+	// return super.hashCode();
+	// }
 
 	@Override public int hashCode()
 	{
-		return super.hashCode();
+		// return imei.hashCode();
+		return imei != null ? imei.hashCode() : 1; // Neste caso, em caso de do
+													// hash ser nulo, retorna
+													// uma constante como flag
+													// de erro.
+		//
+		// return 1; // Já neste caso, mesmo compilando, a performance seria
+		// péssima, uma vez que todos os valores seria gerados a partir do mesmo
+		// valor o que ficaria muito custoso para que se achasse o valor da
+		// elemento.
 	}
 
 	public Celular(String nome, String imei)
@@ -56,10 +83,6 @@ public class Celular
 		this.imei = imei;
 	}
 
-	public Celular()
-	{
-		// TODO Auto-generated constructor stub
-	}
 
 	public String getNome()
 	{
