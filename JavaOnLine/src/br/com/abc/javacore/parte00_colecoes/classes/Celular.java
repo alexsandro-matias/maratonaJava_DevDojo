@@ -1,6 +1,5 @@
 // Aula 117 - Coleções pt 02 Introdução a Hashcode
 // Aula 118 - Coleções pt 03 Introdução as coleções
-
 package br.com.abc.javacore.parte00_colecoes.classes;
 
 public class Celular
@@ -82,7 +81,6 @@ public class Celular
 		this.nome = nome;
 		this.imei = imei;
 	}
-
 
 	public String getNome()
 	{
