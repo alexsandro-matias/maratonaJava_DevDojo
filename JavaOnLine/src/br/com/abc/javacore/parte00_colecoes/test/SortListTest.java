@@ -33,8 +33,5 @@ public class SortListTest
 		numeros.add(1.2);
 		Collections.sort(numeros);
 		System.out.println(numeros);
-		
-		
-		
 	}
 }

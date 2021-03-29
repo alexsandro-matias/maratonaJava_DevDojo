@@ -11,19 +11,22 @@ public class MapTest
 {
 	public static void main(String[] args)
 	{
-		// Map<String, String> map = new HashMap<String, String>();
+		 Map<String, String> map = new HashMap<String, String>();
 		// Como é um Hash, Não tem como garantir a ordem dos elementos.
 		//
 		//
 		// Para manter a ordem de inserção devemos mudar o objeto declado.
-		Map<String, String> map = new LinkedHashMap<String, String>();
+//		Map<String, String> map = new LinkedHashMap<String, String>();
 		//
 		// Primeira regra de HashMap é que não pode haver chaves duplicadas.
 		// Implementando um dicionário teremos como exemplo:
-		map.put("teklado", "teclado");
-		map.put("mause", "mouse");
-		map.put("vc", "você");
-		map.put("vc", "você??"); // substituição de valor
+//		map.put("teklado", "teclado");
+//		map.put("mause", "mouse");
+//		map.put("vc", "você");
+//		map.put("vc", "você??");
+		System.out.println(map.get("teclado"));
+//		System.out.println(map.get("paulo"));
+		// substituição de valor
 		// Para iterar os elementos do map temos duas possibilidade: Pela chave.
 		// for (String key : map.keySet())
 		// {
