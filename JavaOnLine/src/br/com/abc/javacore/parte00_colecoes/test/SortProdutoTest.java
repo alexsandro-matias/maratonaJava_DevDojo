@@ -1,6 +1,6 @@
 // Aula 121 - Coleções parte 06 - Ordenação de Listas usando Comparable
 // Aula 122 - Coleções parte 07 - Ordenação de Listas usando Comparator
-package br.com.abc.javacore.colecoes.test;
+package br.com.abc.javacore.parte00_colecoes.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -33,9 +33,11 @@ public class SortProdutoTest
 		// erro de compilação -> Ele não tem como saber qual dos itens deve
 		// ordenar -> se por String ou por número
 		// existe uma Interface chamada Comparable que utiliza um algoritmo
-		// de
-		// ordenação;
+		// de ordenação;
 		// Devemos implementar a Interface Comparable na classe Produto
+		//
+		// Tipos de coleções são dois tipos: Ordenadas (ordered) e Classificadas
+		// ou sortidas (sorted).
 		//
 		Collections.sort(produtos);
 		for (Produto produto : produtos)
