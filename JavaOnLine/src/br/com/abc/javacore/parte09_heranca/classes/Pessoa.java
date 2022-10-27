@@ -34,16 +34,22 @@ public class Pessoa
 		System.out.println("Dentro de Construtor de pessoa");
 		this.nome = nome;
 	}
-	// Esse construtor dessa forma dará um erro de compilação nas classes filhas, já
-	// que todo funcionário é uma pessoa. Então se o construtor em pessoa obriga a
-	// adicionar um nome, então em funcionário também o será.
 	//
-	
+	// Esse construtor dessa forma dará um erro de compilação nas classes
+	// filhas, já que todo funcionário é uma pessoa. Então se o construtor em
+	// pessoa obriga a adicionar um nome, então em funcionário também o será.
+	//
 	
 	public Pessoa(String nome, String cpf)
 	{
 		this(nome);
 		this.cpf = cpf;
+	}
+	
+	public Pessoa(String nome, String cpf, Endereco endereco)
+	{
+		this(nome, cpf);
+		this.endereco = endereco;
 	}
 	
 	public Pessoa()

@@ -27,6 +27,6 @@ public class HerancaTest
 		doria.setSalario(1500);
 		// Quem executa os métodos sempre serão as variáveis de referência
 		// (objetos)
-		// doria.print();
+		doria.print();
 	}
 }

@@ -15,11 +15,11 @@ public abstract class Funcionario extends Pessoa
 	// private String nome;
 	// private String clt;
 	// private double salario;
+	//
 	// Deixando os atributos protected para não precisar o setters.
-	
 	protected String clt;
 	protected double salario;
-
+	
 	// public void calculaSalario()
 	// {
 	// this.salario = this.salario + (this.salario * 0.1);
@@ -31,49 +31,49 @@ public abstract class Funcionario extends Pessoa
 	// obrigatoriedade de métodos abstratos.
 	// Caso os métodos não sejam abstratos, eles são chamados de concretos.
 	public abstract void calculaSalario();
-
+	
 	public Funcionario(String nome, String clt, double salario)
 	{
 		this.nome = nome;
 		this.clt = clt;
 		this.salario = salario;
 	}
-
+	
 	public Funcionario()
 	{
 		// construtor vazio
 	}
-
+	
 	public String getNome()
 	{
 		return nome;
 	}
-
+	
 	public void setNome(String nome)
 	{
 		this.nome = nome;
 	}
-
+	
 	public String getClt()
 	{
 		return clt;
 	}
-
+	
 	public void setClt(String clt)
 	{
 		this.clt = clt;
 	}
-
+	
 	public double getSalario()
 	{
 		return salario;
 	}
-
+	
 	public void setSalario(double salario)
 	{
 		this.salario = salario;
 	}
-
+	
 	public String toString()
 	{
 		return String.format("Funcionario [nome=%s, clt=%s, salario=%s]", nome, clt, salario);
