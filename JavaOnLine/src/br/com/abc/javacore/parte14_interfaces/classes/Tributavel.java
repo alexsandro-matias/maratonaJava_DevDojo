@@ -13,7 +13,7 @@ public interface Tributavel
 	// concretos.
 	// public abstract void calcularImposto(); - forma explícita de declaração.
 	void calcularImposto();
-
+	
 	// Da mesma forma que os atributos, estes devem ser totalmente estáticos.
 	public static final double IMPOSTO = 0.2; // deve ser inicializada por que
 												// são constantes.
