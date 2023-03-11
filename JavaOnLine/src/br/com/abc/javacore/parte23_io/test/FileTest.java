@@ -19,11 +19,13 @@ public class FileTest
 		// File file = new
 		// File("/run/media/matias/arquivos/MarotonaJava_DevDojo/JavaOnLine/Arquivo.txt");
 		// // Este arquivo
-		File file = new File("Arquivo.txt"); // será criado dentro diretório
+		File file = new File("Arquivo.txt"); // será criado dentro diretório do
+												// projeto, caso não seja
+												// mencionado nenhum path
 												// digitado. Neste momento não
 												// há a criação do arquivo, mas
 												// sim um objeto do tipo File.
-												// Realizando o comando abaixo
+												// Realizando o comando abaixo:
 		try
 		{
 			boolean newFile = file.createNewFile();
@@ -31,7 +33,7 @@ public class FileTest
 			// Na segunda vez que é executado esse comando, o retorno será
 			// false, uma vez que o arquivo já existe. Outra forma, mais é
 			// através:
-			System.out.println(file.createNewFile());
+			// System.out.println(file.createNewFile());
 			boolean fileExist = file.exists();
 			// Para testar se o arquivo existe.
 			// System.out.println(file.exists());
@@ -39,8 +41,16 @@ public class FileTest
 			System.out.println("Local do arquivo: " + file.getPath());
 			System.out.println("É um Diretório: " + file.isDirectory());
 			System.out.println("O arquivo é oculto: " + file.isHidden());
+			System.out.println("Última vez que o arquivo foi modificado: " + file.lastModified());
+			// retorna um valor Long que representa o tempo em milisegundo. Para
+			// realizar a conversão devemos passar num construtor da Classe
+			// Date.
+			//
+			// System.out.println("Última vez que o arquivo foi modificado: " +
+			// new Date(file.lastModified())); -> Linux
+			// System.out.println("Local do completo do arquivo: " +
+			// file.getAbsolutePath());
 			System.out.println("Última vez que o arquivo foi modificado: " + new Date(file.lastModified()));
-			System.out.println("Local do completo do arquivo: " + file.getAbsolutePath());
 			if (fileExist)
 			{
 				System.out.println("Arquivo deletado? " + file.delete());
