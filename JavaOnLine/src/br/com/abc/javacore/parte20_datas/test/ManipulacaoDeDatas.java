@@ -43,8 +43,6 @@ public class ManipulacaoDeDatas
 		Date data = new Date();
 		Calendar momentoAtual = Calendar.getInstance();
 		momentoAtual.setTime(data);
-		// Adicionando 4 horas pra que o dia passe
-		// para amanhã
 		momentoAtual.add(Calendar.DAY_OF_WEEK, 6);
 		int hoje = momentoAtual.get(Calendar.DAY_OF_WEEK);
 		if ((hoje == 1) || (hoje == 7))
