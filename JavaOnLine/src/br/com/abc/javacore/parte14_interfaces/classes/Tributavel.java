@@ -15,6 +15,6 @@ public interface Tributavel
 	void calcularImposto();
 	
 	// Da mesma forma que os atributos, estes devem ser totalmente estáticos.
-	public static final double IMPOSTO = 0.2; // deve ser inicializada por que
-												// são constantes.
+	// deve ser inicializada por que são constantes.
+	public static final double IMPOSTO = 0.2;
 }
