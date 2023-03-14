@@ -7,15 +7,12 @@ import br.com.abc.javacore.parte08_associacao.classes.Seminario;
 
 public class AssociacaoTest
 {
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args)
 	{
 		Aluno aluno = new Aluno("Alexsandro", 35); // variável de referência do
-													// tipo Aluno referenciando
-													// um objeto do
-													// tipo aluno.
+		// tipo Aluno referenciando
+		// um objeto do
+		// tipo aluno.
 		Aluno aluno2 = new Aluno("Joanna Darc", 30);
 		// Deverão ser feitos de forma separadas para que haja a associação
 		// entre eles,
@@ -23,10 +20,10 @@ public class AssociacaoTest
 		// classe.
 		Seminario seminario = new Seminario("Como ser rico com programação");
 		aluno.setSeminario(seminario); // Se parâmetro não contiver valores, dá
-										// uma exceção em tempo de execução -
-										// java.lang.NullPointerException -
-										// tentando acessar um objeto que não
-										// existe
+		// uma exceção em tempo de execução -
+		// java.lang.NullPointerException -
+		// tentando acessar um objeto que não
+		// existe
 		aluno2.setSeminario(seminario);
 		Professor professor = new Professor("Yoda", "usar a força para programar");
 		Local local = new Local("Rua das Araras", "mato");
@@ -34,7 +31,7 @@ public class AssociacaoTest
 		seminario.setLocal(local);
 		// associando alunos ao seminários
 		seminario.setAlunos(new Aluno[]
-		{ aluno, aluno2 }); // um array de alunos
+				{ aluno, aluno2 }); // um array de alunos
 		aluno.print();
 		// Saída:
 		// Nome: Alexsandro
@@ -52,7 +49,6 @@ public class AssociacaoTest
 		Seminario seminarioArray[] = new Seminario[1];
 		seminarioArray[0] = seminario;
 		professor.setSeminario(seminarioArray);
-		
 		seminario.printSeminario();
 	}
 }
